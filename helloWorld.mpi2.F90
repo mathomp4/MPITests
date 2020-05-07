@@ -1,10 +1,9 @@
 program hello_world
 
    use iso_fortran_env
+   use mpi
 
    implicit none
-
-   include 'mpif.h'
 
    integer :: comm
    integer :: myid, npes, ierror

@@ -1,8 +1,8 @@
 program hello_world
 
-   use mpi
-
    implicit none
+
+   include 'mpif.h'
 
    integer :: comm
    integer :: myid, npes, ierror
