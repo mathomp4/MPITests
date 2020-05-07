@@ -25,7 +25,7 @@ program hello_world
    num_threads = omp_get_num_threads()
    my_thread = omp_get_thread_num()
 
-   write (*,'(A,X,I4,X,A,X,I4,X,A,X,I4,X,X,A,X,I4,X,A,X,A)') &
+   write (*,'(A,1X,I4,1X,A,1X,I4,1X,A,1X,I4,1X,1X,A,1X,I4,1X,A,1X,A)') &
       "Hello from thread", my_thread, "out of", num_threads, &
       "from process", myid, "out of", npes, "on", trim(processor_name)
    !$omp end parallel

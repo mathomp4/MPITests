@@ -18,7 +18,7 @@ program hello_world
    call MPI_Comm_Size(comm,npes,ierror)
    call MPI_Get_Processor_Name(processor_name,name_length,ierror)
 
-   write (*,'(A,X,I4,X,A,X,I4,X,A,X,A)') "Process", myid, "of", npes, "is on", trim(processor_name)
+   write (*,'(A,1X,I4,1X,A,1X,I4,1X,A,1X,A)') "Process", myid, "of", npes, "is on", trim(processor_name)
 
    call MPI_Finalize(ierror)
 

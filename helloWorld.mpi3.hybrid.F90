@@ -15,6 +15,8 @@ program hello_world
 
    call MPI_Init(ierror)
 
+   call sleep(3)
+
    comm = MPI_COMM_WORLD
 
    call MPI_Comm_Rank(comm,myid,ierror)
