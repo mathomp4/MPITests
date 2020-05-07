@@ -1,0 +1,14 @@
+HYDRA build details:
+    Version:                                 3.2
+    Release Date:                            Tue Feb 20 13:05:56 EST 2018
+    CC:                              /usr/local/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/icc -I/usr/slurm/include -fpic -m64 -L/usr/slurm/lib64 
+    CXX:                             /usr/local/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/icpc -I/usr/slurm/include -fpic -m64 -L/usr/slurm/lib64 
+    F77:                             /usr/local/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort -m64 -fpic -L/usr/slurm/lib64 
+    F90:                             /usr/local/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort -m64 -fpic -L/usr/slurm/lib64 
+    Configure options:                       '--disable-option-checking' '--prefix=/usr/local/other/SLES11.3/mvapich2/2.3rc1/intel-18.0.1.163' '--with-cma' '--with-limic2' '--enable-fortran=all' '--enable-cxx' 'CC=/usr/local/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/icc' 'CFLAGS=-fpic -m64 -DNDEBUG -DNVALGRIND -O2' 'LDFLAGS=-L/lib -L/lib -L/usr/slurm/lib64 -L/lib -Wl,-rpath,/lib -L/lib -Wl,-rpath,/lib -L/lib -L/lib' 'CPPFLAGS=-I/usr/slurm/include -I/gpfsm/dnbsrc/other/mvapich/src/src1/SLES11/2.3rc1/mvapich2-2.3rc1/src/mpl/include -I/gpfsm/dnbsrc/other/mvapich/src/src1/SLES11/2.3rc1/mvapich2-2.3rc1/src/mpl/include -I/gpfsm/dnbsrc/other/mvapich/src/src1/SLES11/2.3rc1/mvapich2-2.3rc1/src/openpa/src -I/gpfsm/dnbsrc/other/mvapich/src/src1/SLES11/2.3rc1/mvapich2-2.3rc1/src/openpa/src -D_REENTRANT -I/gpfsm/dnbsrc/other/mvapich/src/src1/SLES11/2.3rc1/mvapich2-2.3rc1/src/mpi/romio/include -I/include -I/include -I/include -I/include' 'CXX=/usr/local/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/icpc' 'CXXFLAGS=-fpic -m64 -DNDEBUG -DNVALGRIND -O2' 'CCC=/usr/local/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/icpc' 'FC=/usr/local/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort' 'FCFLAGS=-m64 -fpic -O2' 'F77=/usr/local/intel/2018/compilers_and_libraries_2018.1.163/linux/bin/intel64/ifort' 'FFLAGS=-L/lib -L/lib -m64 -fpic -O2' '--cache-file=/dev/null' '--srcdir=.' 'LIBS=-libmad -lrdmacm -libumad -libverbs -lrt -llimic2 -lpthread '
+    Process Manager:                         pmi
+    Launchers available:                     ssh rsh fork slurm ll lsf sge manual persist
+    Topology libraries available:            hwloc
+    Resource management kernels available:   user slurm ll lsf sge pbs cobalt
+    Checkpointing libraries available:       
+    Demux engines available:                 poll select
