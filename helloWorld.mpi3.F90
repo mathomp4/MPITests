@@ -37,6 +37,5 @@ program hello_world
    write (output_unit,'(A,X,I4,X,A,X,I4,X,A,X,A)') "Process", myid, "of", npes, "is on", trim(processor_name)
 
    call MPI_Finalize(ierror)
-   write (output_unit,*) ierror
 
 end program hello_world
