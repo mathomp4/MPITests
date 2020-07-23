@@ -4,6 +4,8 @@ program hello_world
 
    include 'mpif.h'
 
+   ! https://github.com/mathomp4/MPITests/wiki/files/dummy.pdf
+
    integer :: comm
    integer :: myid, npes, ierror
    integer :: name_length
