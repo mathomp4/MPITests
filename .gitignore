@@ -1,4 +1,5 @@
 *.exe
+*.x
 *.log
 *.o
 *.mod
