@@ -13,7 +13,6 @@ program hello_world
 
    integer :: version, subversion, resultlen
    character(len=MPI_MAX_LIBRARY_VERSION_STRING) :: version_string
-   character(len=MPI_MAX_LIBRARY_VERSION_STRING) :: my_compiler_version
 
    call mpi_get_version(version, subversion, ierror)
 
@@ -28,7 +27,7 @@ program hello_world
    call MPI_Get_Processor_Name(processor_name,name_length,ierror)
 
    if (myid == 0) then
-      !write (output_unit,'("Compiler Version:",1X,A)') trim(my_compiler_version())
+      write (output_unit,'("Compiler Version:",1X,A)') trim(compiler_version())
       write (output_unit,'("MPI Version:",1X,I1,".",I1)') version, subversion
       write (output_unit,'("MPI Library Version:",1X,A)') trim(version_string)
    end if
