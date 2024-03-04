@@ -27,14 +27,14 @@ program hello_world
    call MPI_Get_Processor_Name(processor_name,name_length,ierror)
 
    if (myid == 0) then
-      write (output_unit,'("Compiler Version:",X,A)') trim(compiler_version())
-      write (output_unit,'("MPI Version:",X,I1,".",I1)') version, subversion
-      write (output_unit,'("MPI Library Version:",X,A)') trim(version_string)
+      write (output_unit,'("Compiler Version:",1X,A)') trim(compiler_version())
+      write (output_unit,'("MPI Version:",1X,I0,".",I0)') version, subversion
+      write (output_unit,'("MPI Library Version:",1X,A)') trim(version_string)
    end if
 
    call mpi_barrier(MPI_COMM_WORLD, ierror)
 
-   write (output_unit,'(A,X,I4,X,A,X,I4,X,A,X,A)') "Process", myid, "of", npes, "is on", trim(processor_name)
+   write (output_unit,'(A,1X,I0,1X,A,1X,I0,1X,A,1X,A)') "Process", myid, "of", npes, "is on", trim(processor_name)
 
    call MPI_Finalize(ierror)
 
