@@ -15,8 +15,6 @@ program hello_world
 
    call MPI_Init(ierror)
 
-   call sleep(3)
-
    comm = MPI_COMM_WORLD
 
    call MPI_Comm_Rank(comm,myid,ierror)
@@ -27,7 +25,7 @@ program hello_world
    num_threads = omp_get_num_threads()
    my_thread   = omp_get_thread_num()
 
-   write (*,'(A,X,I4,X,A,X,I4,X,A,X,I4,X,A,X,I4,X,A,X,A)') &
+   write (*,'(A,1X,I4,1X,A,1X,I4,1X,A,1X,I4,1X,A,1X,I4,1X,A,1X,A)') &
       "Hello from thread", my_thread, "out of", num_threads, &
       "on process", myid, "of", npes, "on processor", trim(processor_name)
 
