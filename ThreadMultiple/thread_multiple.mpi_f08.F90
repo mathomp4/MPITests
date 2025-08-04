@@ -1,5 +1,5 @@
 program main
-   use mpi
+   use mpi_f08
 
    implicit none
    integer :: ierror, provided
